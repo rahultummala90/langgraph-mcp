@@ -1,4 +1,6 @@
 langgraph
 langchain
 langsmith
-
+python-dotenv
+langchain_openai
+langchain_tavily

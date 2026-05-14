@@ -1,0 +1,9 @@
+- Commands
+uv init
+uv venv
+source .venv/bin/activate
+uv add -r requirements.txt 
+uv add ipykernel
+
+
+- ToolNode is a prebuilt LangGraph node that automatically executes tools when an LLM requests them.
