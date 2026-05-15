@@ -7,3 +7,9 @@ uv add ipykernel
 
 
 - ToolNode is a prebuilt LangGraph node that automatically executes tools when an LLM requests them.
+
+- Streaming
+    - sync and async methods for streaming back results
+    - .stream()
+    - astream()
+    - modes --> update, value
