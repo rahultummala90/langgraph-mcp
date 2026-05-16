@@ -13,3 +13,9 @@ uv add ipykernel
     - .stream()
     - astream()
     - modes --> update, value
+
+- MCP
+    - MCP Servers --> Tools, context and prompts
+    - MCP Clients -->  Instantiated by host applications to communicate with particular MCP servers. Requests data and tools from external sources
+    - Apps --> Agents, AI/LLM apps, Chatbots
+    - 
