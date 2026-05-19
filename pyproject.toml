@@ -15,4 +15,5 @@ dependencies = [
     "matplotlib>=3.10.9",
     "langchain-mcp-adapters>=0.2.2",
     "mcp>=1.27.1",
+    "langgraph-cli[inmem]>=0.4.26",
 ]
