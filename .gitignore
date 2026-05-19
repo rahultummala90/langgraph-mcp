@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# macOS
+.DS_Store
+
+# LangGraph Studio runtime files
+.langgraph_api/
