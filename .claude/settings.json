@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "CMD=$(jq -r '.tool_input.command'); echo \"$CMD\" | grep -q 'git push' && { REVIEW=$({ git log --oneline origin/$(git branch --show-current)..HEAD 2>/dev/null; echo; git diff origin/$(git branch --show-current)..HEAD 2>/dev/null | head -300; } | /Users/rahul/.local/bin/claude -p 'You are a code reviewer. Review these git changes about to be pushed. Be concise — list only actual bugs, security issues, or breaking changes in bullet points. If nothing serious, say Looks good to push.' 2>/dev/null); echo \"$REVIEW\" > /tmp/pre-push-review.txt; jq -n --arg msg \"Code Review:\\n$REVIEW\" '{systemMessage: $msg}'; } || true"
+            "command": "CMD=$(jq -r '.tool_input.command'); echo \"$CMD\" | grep -q 'git push' && { REVIEW=$({ git log --oneline origin/$(git branch --show-current)..HEAD 2>/dev/null; echo; git diff origin/$(git branch --show-current)..HEAD 2>/dev/null | head -300; } | /Users/rahul/.local/bin/claude -p 'You are a code reviewer. Review these git changes about to be pushed. Be concise — list only actual bugs, security issues, or breaking changes in bullet points. If nothing serious, say Looks good to push.' 2>/dev/null); { echo \"=== Code Review: $(date '+%Y-%m-%d %H:%M:%S') ===\"; echo \"$REVIEW\"; } > /tmp/pre-push-review.txt; jq -n --arg msg \"Code Review:\\n$REVIEW\" '{systemMessage: $msg}'; } || true"
           }
         ]
       }
