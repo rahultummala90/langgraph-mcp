@@ -1,9 +1,9 @@
 - Commands
-uv init
-uv venv
-source .venv/bin/activate
-uv add -r requirements.txt 
-uv add ipykernel
+    uv init
+    uv venv
+    source .venv/bin/activate
+    uv add -r requirements.txt 
+    uv add ipykernel
 
 
 - ToolNode is a prebuilt LangGraph node that automatically executes tools when an LLM requests them.
@@ -19,3 +19,7 @@ uv add ipykernel
     - MCP Clients -->  Instantiated by host applications to communicate with particular MCP servers. Requests data and tools from external sources
     - Apps --> Agents, AI/LLM apps, Chatbots
     - 
+
+- Agents
+    - Simple multi AI Agent --> Independent Agents
+    - Supervisor multi AI Agent

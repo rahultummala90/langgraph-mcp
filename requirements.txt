@@ -4,3 +4,6 @@ langsmith
 python-dotenv
 langchain_openai
 langchain_tavily
+langchain-mcp-adapters
+mcp
+langgraph-cli[inmem]
