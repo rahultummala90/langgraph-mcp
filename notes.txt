@@ -23,3 +23,4 @@
 - Agents
     - Simple multi AI Agent --> Independent Agents
     - Supervisor multi AI Agent
+    - Hierarchical multi AI Agent
