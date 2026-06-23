@@ -8,7 +8,6 @@ load_dotenv()
 
 import asyncio
 
-
 async def main():
     client = MultiServerMCPClient(
         {

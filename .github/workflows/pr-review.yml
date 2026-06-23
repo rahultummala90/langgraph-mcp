@@ -1,0 +1,15 @@
+name: AI PR Reviewer
+
+on:
+    pull_request:
+        types: [opened, synchronize, reopened]
+
+permissions:
+    contents: read
+    pull-requests: write
+
+jobs:
+    review:
+        uses: rahultummala90/Github-PR-AI-Review/.github/workflows/pr-review.yml@main
+        secrets:
+            GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
